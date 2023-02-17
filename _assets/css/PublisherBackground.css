@@ -1,0 +1,110 @@
+html{
+/*
+	background-image: url(images/bkgd_3000px.jpg);
+	background-repeat: repeat-x;
+*/
+      background: white;
+/*background: conic-gradient(at -20% 20%, SteelBlue 10%, white 30%, #eee 50%);*/
+/*    background-attachment: fixed;*/
+}
+
+body, #pageDIV{
+/*	background-color: white;*/
+    
+}
+
+.noredonclick input:focus, textarea:focus {
+	box-shadow: inset 0 1px 1px #3595e8, 0 0 8px #3595e8 !important;
+	outline: #3595e8 auto 1px !important;
+	border-color: #3595e8 !important;
+}
+
+.noredonclick input[type='file']:focus, input[type='radio']:focus, input[type='checkbox']:focus, input[type='textarea']:focus {
+	box-shadow: inset 0 1px 1px #3595e8, 0 0 8px #3595e8 !important;
+	outline: #3595e8 auto 1px !important;
+	border-color: #3595e8 !important;
+	outline-color: #3595e8 !important;
+}
+
+.nav_menu {
+background: green!important;
+}
+
+#menu83996c_2 {
+display: none;
+}
+
+
+/*
+.float-rt {
+float: left!important;
+padding: 20px!important;
+background: red!important;
+}
+*/
+
+/*
+.clearfix::after {
+content: "";
+clear: right;
+display: table;
+}
+*/
+
+
+/*
+.textBlock {
+padding: 30px!important;
+background: orange!important;
+display: flex!important;
+flex-direction: column;
+justify-content: stretch;
+height: auto;
+
+}
+*/
+/*
+.textBlock * p {
+background: yellow!important;
+font-family: verdana!important;
+font-size: 11pt!important;
+line-height: 3!important;
+}
+*/
+/*
+.textBlock * img {
+float: left!important;
+padding: 20px!important;
+background: red!important;
+}
+*/
+
+
+svg:focus {outline:0px !important;} 
+/*button * {font-family: Verdana, Arial, "sans-serif" !important;}*/
+*:not(i):not(.fa), body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, button, button *  {
+/*  font-family: "Segoe UI", Arial, Verdana, sans-serif;*/
+/*  font-family: "Segoe UI", Arial, Verdana, sans-serif !important;*/
+}
+
+
+/*
+p span{visibility: inherit; text-indent: 0px;  text-align: left; font-size: 15px!important; font-family: "Verdana", sans-serif !important; line-height: 120%!important; background: none!important;}
+ul, ol {margin:0 1.5em 0em 2.5em !important;}
+
+ul {list-style-type:none;}
+	ul li, ol li ,ul li span, ol li span{font-size: 15px!important; font-family: "Verdana", sans-serif !important; background: none!important;}
+ol {list-style-type:decimal;}
+*/
+
+*:not(i):not(.fa):not(h1):not(h2),
+button * {
+/*    font-family: Verdana, Arial, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+/*    line-height: 1.25!important;*/
+/*font-family: Arial, Verdana,"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+}
+
+/*
+a, a *, a span {
+    text-decoration: none !important;
+}*/

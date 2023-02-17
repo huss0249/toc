@@ -1,0 +1,203 @@
+/*
+html{
+	background-image: url(images/bkgd_3000px.jpg);
+	background-repeat: repeat-x;
+}
+
+body, #pageDIV{
+	background-color: white;
+}
+*/
+
+.noredonclick input:focus, textarea:focus {
+/*
+	box-shadow: inset 0 1px 1px #3595e8, 0 0 8px #3595e8 !important;
+	outline: #3595e8 auto 1px !important;
+	border-color: #3595e8 !important;
+*/
+}
+
+.noredonclick input[type='file']:focus, input[type='radio']:focus, input[type='checkbox']:focus, input[type='textarea']:focus {
+/*
+	box-shadow: inset 0 1px 1px #3595e8, 0 0 8px #3595e8 !important;
+	outline: #3595e8 auto 1px !important;
+	border-color: #3595e8 !important;
+	outline-color: #3595e8 !important;
+*/
+}
+
+.nav_menu {
+background: green!important;
+}
+
+#menu83996c_2 {
+display: none;
+}
+
+
+.float-rt {
+/*
+float: left!important;
+padding: 20px!important;
+background: red!important;
+*/
+}
+
+.clearfix::after {
+/*
+content: "";
+clear: right;
+display: table;
+*/
+}
+
+
+.textBlock {
+/*
+padding: 30px!important;
+background: orange!important;
+display: flex!important;
+flex-direction: column;
+justify-content: stretch;
+height: auto;
+*/
+
+}
+.textBlock * p {
+/*
+background: yellow!important;
+font-family: verdana!important;
+font-size: 11pt!important;
+line-height: 3!important;
+*/
+}
+/*
+.textBlock * img {
+float: left!important;
+padding: 20px!important;
+background: red!important;
+}
+*/
+
+
+svg:focus {outline:0px !important;} 
+/*button * {font-family: Verdana, Arial, "sans-serif" !important;}*/
+*:not(i):not(.fa), body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, button, button *  {
+/*  font-family: "Segoe UI", Arial, Verdana, sans-serif !important;*/
+}
+
+
+/*
+p span{visibility: inherit; text-indent: 0px;  text-align: left; font-size: 15px!important; font-family: "Verdana", sans-serif !important; line-height: 120%!important; background: none!important;}
+ul, ol {margin:0 1.5em 0em 2.5em !important;}
+
+ul {list-style-type:none;}
+	ul li, ol li ,ul li span, ol li span{font-size: 15px!important; font-family: "Verdana", sans-serif !important; background: none!important;}
+ol {list-style-type:decimal;}
+*/
+
+*:not(i):not(.fa):not(h1):not(h2):not(table),
+button * {
+/*    font-family: Verdana, Arial, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+/*    font-family: Verdana, Arial, "sans-serif" !important;*/
+/*      font-family: "Segoe UI", Arial, Verdana, sans-serif !important;*/
+/*    font-weight: unset !important;*/
+/*    line-height: 1.25!important;*/
+/*font-family: Arial, Verdana,"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+}
+
+/* Some bolded text within tables */
+.table_txt * {
+    font-weight: unset !important;
+}
+
+a, a *, a span {
+/*    text-decoration: none !important;*/
+}
+
+/* Delegation Matrix@ M2 page 12 */
+li.text1229499Font4,
+li.text1234792Font9,
+li.text325930Font9{
+    color: unset !important;
+    text-decoration: unset !important; 
+}
+
+body div,
+div.div {
+/*    line-height: 1 !important;*/
+}
+
+h1, h2, h3 {
+/*    line-height: 1.25 !important;*/
+}
+
+.note_txt {
+    border-left: 10px solid orange;
+/*    padding: 20px;*/
+}
+
+
+
+
+
+
+
+
+iframe {
+/*    background: red;*/
+    border-width: 0px!important;
+    border-top-width: 0px!important;
+    border-right-width: 0px!important;
+    border-bottom-width: 0px!important;
+    border-left-width: 0px!important;
+    border-style: none!important;
+    border-top-style: none!important;
+    border-right-style: none!important;
+    border-bottom-style: none!important;
+    border-left-style: none!important;
+    border-color: transparent!important;
+    border-top-color: none!important;
+    border-right-color: none!important;
+    border-bottom-color: none!important;
+    border-left-color: none!important;
+    border-image: none!important;
+    border-image-source: none!important;
+    border-image-slice: none!important;
+    border-image-width: none!important;
+    border-image-outset: none!important;
+    border-image-repeat: none!important;
+}
+
+
+.TOC, #toc45138, #toc1236570 {
+/*    background: red !important;*/
+/*    border: solid thick red !important;*/
+/*    width: 500px!important;*/
+/*    height: 200px!important;*/
+/*    box-shadow: 50px 50px 10px 10px rgba(0, 0, 0, 0.25) !important;*/
+    box-sizing: border-box !important;
+/*    box-shadow: 0px 10px 10px #888888!important;*/
+/*    clip: none !important;*/
+    clip: unset !important;
+/*    clip-path: none!important;*/
+}
+
+table {
+    overflow-y: scroll !important;
+}
+
+table * {
+    overflow-y: visible!important;
+}
+
+
+
+.sr-only {
+position:absolute !important;
+left:-10000px !important;
+top:auto !important;
+width:1px !important;
+height:1px !important;
+overflow:hidden !important;
+}

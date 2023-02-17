@@ -1,0 +1,13 @@
+/**:not(i):not(.fa),*/
+/*button * {*/
+/*    font-family: Verdana, Arial, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+/*    font-family: "Segoe UI", Arial, Verdana, sans-serif !important;*/
+/*    line-height: 1.25!important;*/
+/*font-family: Arial, Verdana,"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif" !important;*/
+/*}*/
+
+
+*:not(i):not(.fa), body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, button, button *  {
+/*  font-family: "Segoe UI", Arial, Verdana, sans-serif;*/
+/*  font-family: "Segoe UI", Arial, Verdana, sans-serif !important;*/
+}

@@ -1,0 +1,886 @@
+/*@import "preloader.css";*/
+/*
+@import "./bootstrap.min.css";
+@import "./reset.css";
+@import "./normalize.css";
+*/
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+/*
+@font-face
+{
+  font-family:'FontAwesome';
+  src:url('./fonts/fontawesome-webfont.eot');
+  src:url('./fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/fontawesome-webfont.woff') format('woff'),
+  url('./fonts/fontawesome-webfont.ttf') format('truetype'),
+  url('./fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight:normal;
+  font-style:normal
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before
+{
+  font-family:FontAwesome;
+  font-weight:normal;
+  font-style:normal;
+  display:inline-block;
+  text-decoration:inherit
+}
+*/
+
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+
+
+/*    BASE CSS  ;*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* DEFAULTS */
+:root {
+	--pd: 30px;
+	--bd: solid thin black;
+}
+  
+
+.bordered {
+    border: var(--bd);
+}
+.centered {
+/*    position: relative !important;*/
+    margin: 0 auto !important;
+    width: unset !important;
+/*    left: unset !important;*/
+ 
+/*    clip: rect(0px 1265px 800px 0px);*/
+/*    clip: unset !important;*/
+/*    overflow: hidden;*/
+}
+.reset_pos {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    clip: unset !important;
+    width: unset !important;
+    height: unset !important;
+}
+
+.reset_top_left_clip {
+    top: unset !important;
+    left: unset !important;
+    clip: unset !important;
+}
+
+.reset_w_h {
+    width: unset !important;
+    height: unset !important;
+}
+
+.noBG {
+    background: none;
+}
+
+body {
+/*
+	display: flex;
+    flex-direction: column;
+	margin: 0;
+	padding: 0;
+    background: #CDCDCD
+*/
+}
+
+
+
+
+
+
+.custom-bg {
+/*	background: rgb(83, 183, 255);*/
+	/* fallback for old browsers */
+/*	background: -webkit-linear-gradient(to right, rgb(189, 255, 217), #12D8FA, rgb(83, 183, 255));*/
+	/* Chrome 10-25, Safari 5.1-6 */
+/*	background: linear-gradient(to right, rgb(189, 255, 217), #12D8FA, rgb(83, 183, 255));*/
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: skyblue;
+	/* fallback for old browsers */
+/*    background: -webkit-linear-gradient(120deg, skyblue 10%, lightgray 20%, skyblue 60%, SteelBlue);*/
+	background: 
+        -webkit-linear-gradient(120deg, skyblue 10%,
+            rgba(255, 255, 255, 0.35) 20%,
+            skyblue 60%,
+            SteelBlue),
+        -webkit-linear-gradient(60deg, skyblue 40%,
+            rgba(255, 255, 255, 0.25) 45%,
+            skyblue 70%,
+            SteelBlue);
+	/* Chrome 10-25, Safari 5.1-6 */
+/*    background: linear-gradient(120deg, skyblue 10%, lightgray 20%, skyblue 60%, SteelBlue);*/
+	background: 
+        linear-gradient(120deg, skyblue 10%,
+            rgba(255, 255, 255, 0.35) 20%,
+            skyblue 60%,
+            SteelBlue),
+        linear-gradient(60deg, skyblue 40%,
+            rgba(255, 255, 255, 0.25) 45%,
+            skyblue 70%,
+            SteelBlue);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+
+}
+
+.layered-linear {
+  background: skyblue;
+  background:
+      -webkit-linear-gradient(190deg, rgba(0, 255, 255, 0.5) 40px,
+        rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+        rgba(0, 255, 255, 0.5) 300px),
+      -webkit-linear-gradient(-190deg, rgba(0, 255, 255, 0.5) 30px,
+        rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+        rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+        rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+        rgba(0, 255, 255, 0.5) 230px),
+      -webkit-linear-gradient(23deg, SteelBlue 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, SteelBlue 370px),
+      -webkit-linear-gradient(-23deg, SteelBlue 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, SteelBlue 370px);
+    
+      background:
+      linear-gradient(190deg, rgba(0, 255, 255, 0.5) 40px,
+        rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+        rgba(0, 255, 255, 0.5) 300px),
+      linear-gradient(-190deg, rgba(0, 255, 255, 0.5) 30px,
+        rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+        rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+        rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+        rgba(0, 255, 255, 0.5) 230px),
+      linear-gradient(23deg, SteelBlue 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, SteelBlue 370px),
+      linear-gradient(-23deg, SteelBlue 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, SteelBlue 370px);
+    
+    background-attachment: fixed;
+}
+
+.multi-repeating-linear {
+  background:
+      repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+        rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+        rgba(255, 0, 0, 0.5) 300px),
+      repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px,
+        rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+        rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+        rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+        rgba(255, 0, 0, 0.5) 230px),
+      repeating-linear-gradient(23deg, red 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, red 370px);
+    background-attachment: fixed;
+}
+
+.conic-gradient {
+    background: skyblue;
+/*  background: conic-gradient(from 45deg, red, orange 50%, yellow 85%, green);*/
+    background: conic-gradient(at -20% 20%, SteelBlue 10%, white 30%, #1e90ff 50%);
+    background-attachment: fixed;
+}
+
+.stacked-linear {
+    background: skyblue;
+  background:
+      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-attachment: fixed;
+}
+
+body * {
+/*	position: unset!important;*/
+/*	position: relative;*/
+}
+
+
+
+html {
+/*  position: relative;*/
+/*  min-height: 100%;*/
+}
+body {
+/*  margin-bottom: 60px;*/
+	/* Margin bottom by footer height */
+/*  font-family: 'Montserrat', sans-serif;*/
+/*  font-family: 'Nunito', sans-serif;*/
+/*    font-family: 'Roboto', sans-serif;*/
+    
+/*    font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
+    
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    /* background: rgb(208, 255, 0); */
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*	padding: var(--pd);*/
+/*    height: 50px;*/
+}
+
+
+#nav_bar {
+/*    height: 50px;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#govCanada {
+/*
+	width: 200px;
+	height: 20px;
+	
+	
+	border: solid thin black;
+*/
+}
+#govCanada span {
+/*	visibility: hidden;*/
+}
+
+#logo {
+/*	background-image: url('./images/Canadian_Forces_emblem.png');*/
+/*	background-repeat: no-repeat;*/
+	/* background-size: 150%; */
+	/* width: 50px;
+	height: 50px;
+	background-color: white; */
+}
+
+#courseInfo {
+    /* background: green; */
+/*    display: flex;*/
+/*    flex-direction: column;*/
+}
+
+#courseTitle {
+/*	text-transform: uppercase!important;*/
+}
+
+#topIcons {
+/*	background: yellow;*/
+}
+
+
+#pageNav {
+/*	background: orangered;*/
+/*    height: 50px;*/
+    display: flex;
+}
+
+main {
+/*    	background: orangered !important;*/
+
+    /*	background: rgb(233, 255, 250);*/
+	/* background: transparent; */
+/*
+	min-height: 800px;
+    height: auto;
+	padding: var(--pd);
+	border: var(--bd);
+    padding-top: 4rem;
+	position: relative;
+    border: solid thin red;
+    	display: flex;
+    flex-direction: column;
+*/
+
+}
+
+
+/*
+The first is the old element ID
+The second is the new ID
+*/
+#pageDIV,
+#pageDIV {
+    min-height: calc(100vh - 240px);
+    
+    /* commented because of page crop */
+/*    height: calc(100% - 240px);*/
+    
+/*
+      display: flex;  
+  flex-flow: row wrap;
+*/
+
+/*
+	position: relative!important;
+	clip: unset!important;
+	top: unset!important;
+	bottom: unset!important;
+	left: unset!important;
+	right: unset!important;
+	margin: unset!important;
+	margin: 0 auto!important;
+*/
+/*    overflow: hidden !important;*/
+/*    width: 100% !important;*/
+
+/*	display: flex;*/
+/*    flex-direction: column;*/
+/*    border: solid thin yellow;*/
+    
+}
+
+#pageDIV > *,
+#pageDIV > * {
+/*
+  padding: 10px;
+  flex: 1 100%;
+*/
+
+    /*
+	background: cyan !important;
+    overflow: hidden !important;
+*/
+    
+}
+
+
+#navUnderline {
+/*
+	background: orange;
+    display: flex;
+    flex-direction: row;
+*/
+}
+
+
+.toc {
+/*    background: #00FFD3;*/
+}
+
+#toc69815 {
+/*
+    width: 400px!important;
+    height: 600px!important;
+    top: 100px!important;
+    left: 100px!important;
+*/
+}
+
+footer {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+	/* padding: var(--pd); */
+/*      position: fixed;*/
+
+/*
+position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+*/
+	/* Set the fixed height of the footer here */
+/*  line-height: 60px;*/
+	/* Vertically center the text there */
+/*  background-color: #f5f5f5;*/
+}
+
+#footer_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#Canada {
+/*
+	width: 100px;
+	padding: 10px;
+	border: solid thin black;
+*/
+}
+
+
+#copyright {
+/*	width: 200px;*/
+/*	padding: 10px;*/
+/*    text-align: center;*/
+/*    background: red;*/
+/*	border: solid thin black;*/
+}
+
+#pageUp {
+/*
+	border: var(--bd);
+	width: 200px;
+*/
+}
+
+/*
+
+.card-header h2 button:not(.collapsed) {
+    background: var(--info);
+}
+
+.card-header h2 button.collapsed:hover {
+    background: var(--success);
+}
+*/
+
+.card-header h2 button:focus,
+.card-header h2 button:hover {
+    background: var(--danger);
+}
+
+.card-header h2 button {
+/*    font-weight: bold;*/
+}
+
+.list-group-item:focus,
+.list-group-item:hover {
+    background: var(--gray-dark);
+    color: white;
+    border-color: transparent;
+}
+
+.list-group-item.active {
+    background: var(--gray-dark);
+    color: white;
+    border-color: transparent;
+}
+
+/* ====================================== */
+
+  select {
+/*
+	-webkit-appearance: none;
+	border: none;
+*/
+/*	background: burlywood!important;*/
+/*
+	border-radius: 0;
+	padding: 10px;
+	height: 50px!important;
+	color: red !important;
+	text-transform: uppercase!important;
+*/
+  }
+
+  /* 
+ 
+  
+  
+select {
+	margin: 10px;
+	width: 150px;
+	padding: 10px 35px 10px 10px;
+	font-size: 16px;
+	border: 1px solid #CCC;
+	height: 50px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat rgb(226, 4, 4);
+  }
+  
+  
+  /* CAUTION: Internet Explorer hackery ahead */
+  
+/*   
+  select::-ms-expand {
+	  display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
+  /* } */ 
+  
+  /* Target Internet Explorer 9 to undo the custom arrow */
+  /* @media screen and (min-width:0\0) {
+	  select {
+		  background: none\9;
+		  padding: 5px\9;
+	  }
+  } */
+
+  
+  .btn-circle {
+	  /* border-radius: 100% !important; */
+/*	  border-radius: 0 !important;*/
+	  /* width: 40px; */
+	  /* height: 40px; */
+	  /* padding: 5px 0px; */
+	  
+	  /* text-align: center; */
+	  /* font-size: 12px; */
+  }
+
+
+.testIcons > div.i {
+/*    font-size: 1em;*/
+}
+
+/*
+body {
+    background: red!important;
+}*/
+
+.bordered {
+/*    border: solid thin black;*/
+}
+
+.bordered_red {
+/*    border: solid thin red;*/
+}
+
+.navbar-toggler-icon {
+/*
+    background-color: black;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    
+    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+*/
+}
+
+.navbar-dark .navbar-toggler-icon {
+/*    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");*/
+}
+
+
+
+
+
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+
+
+/*    CONTENT CSS  ;*/
+
+
+
+/*TEST applying style on text blocks*/
+.textContent,
+.textContentP {
+    background: #DBFF96;
+    padding: 1rem;
+/*    position: absolute;*/
+    position: relative;
+    width: 100%;
+/*    left:0 !important;*/
+}
+
+
+.didYouKnow {
+    background: red;
+}
+
+.pageName {
+    width: 100% !important;
+}
+@media only screen and (max-width: 800px) {
+    
+
+  .cs-txt-50,
+  .cs-img-50 {
+      background: orange !important;
+/*      display: block !important;*/
+      flex-basis: 100% !important;
+  }
+
+}
+
+
+
+.cs-tbl-100 table tbody tr td {
+/*    width: auto !important;*/
+/*    border: solid thin orange;*/
+}
+
+.cs-tbl-100 {
+/*    width: 100%;*/
+    border: solid thin orange;
+/*    background: #ccc;*/
+}
+
+
+table {
+/*
+    width: 100%;
+    border: solid thin orange;
+    background: #67C9F3;
+*/
+}
+
+
+
+#pageDIV div h2 {
+/*    background: red;*/
+}
+
+#pageDIV div p {
+/*    background: yellow;*/
+}
+
+#pageDIV div ul {
+/*    background: orange;*/
+}
+
+#pageDIV div li {
+/*    background: pink;*/
+}
+
+
+/*
+#external {   
+    width: 100% !important;
+    height: auto !important;
+    background: purple !important;
+    margin: 0 !important;
+    position: relative !important;
+
+}
+
+iframe {   
+    width: 100% !important;
+    min-height: 550px !important;
+    height: auto !important;
+    background: red !important;
+    margin: 0 !important;
+    position: relative !important;
+
+}
+*/
+
+#external {   
+    width: 100% !important;
+/*    min-height: 700px !important;*/
+/*    background: purple;*/
+/*    margin: 0 auto;*/
+    overflow: visible !important;
+    position: relative;
+
+}
+
+iframe,
+#myIframe {
+    width: 100% !important;
+    min-height: 500px !important;
+    height: auto;
+/*    background: orange;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: visible !important;
+}
+
+#animation_container {
+    width: 100% !important;
+/*    background: pink;*/
+
+    min-height: 500px !important;
+    margin: 0 auto !important;
+
+}
+
+canvas {
+    width: 100% !important;
+    min-height: 500px !important;
+    margin: 0 auto !important;
+}
+/*
+#animation_container,
+#canvas {
+    width: 100% !important;
+    height: auto !important;
+    background: red !important;
+    margin: 0 !important;
+    position: relative !important;
+}
+
+iframe,
+#interaction,
+#external {   
+    width: 100% !important;
+    height: auto !important;
+
+    background: blue !important;
+    margin: 0 !important;
+    position: relative !important;
+}*/
+
+.coverPage {
+/*    background: #B8B6B6;*/
+/*    padding: auto;*/
+/*    padding: 1rem;*/
+/*    justify-self: center;*/
+/*    align-self: center;*/
+/*
+    border-radius: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    line-height: 300%;
+*/
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+#courseCover {
+    width: 100%;
+/*    height: 100vh;*/
+    height: 100%;
+/*    padding-top: 4rem;*/
+    background: transparent;
+    /*   opacity: 0.8; */
+    display: flex;
+    flex-direction: column;
+/*       justify-content: space-between; */
+       justify-content: space-around; 
+/*    justify-content: flex-start;*/
+
+    text-transform: uppercase;
+    
+/*
+    font: bold 3rem sans-serif;
+    background-color: #565656;
+    background-color: #363636;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.25);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+*/
+    
+}
+
+.courseTitle {
+    font: bold 2rem sans-serif;
+/*    background-color: #565656;*/
+    background-color: #363636;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.25);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+/*==============================================================================================*/
+
+
+/*    POPUPS CSS  ;*/
+
+.PopupTitle h1 span {
+/*
+    background: orangered;
+    line-height: 1.2;
+*/
+}
+
+.PopupTitleWide {
+/*    background: yellow;*/
+}
+
+
+
+/*MODALS and POPUPS*/
+.DLG_window {
+    background-color: orangered !important;
+}
+
+.DLG_innerDiv {
+    background: none;
+}
+
+.DLG_titleBarLine {
+        background: yellow;
+    padding: 1rem;
+}
+
+.DLG_titleBtns {
+    
+}
+
+#closeBtn,
+.DLG_titleCloseBtn {
+    
+}
+
+.DLG_titleText {
+    
+}
+
+.DLG_dragDiv {
+    
+}
+
+.DLG_content {
+/*background: orange;*/
+}
+
+.DLG_resizeHandle {
+    
+}
