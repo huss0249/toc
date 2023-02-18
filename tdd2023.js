@@ -36,7 +36,7 @@ tdd.App = {
             // "./_assets/js/_lib/bootstrap.bundle.min.js",
             "/_assets/js/tdd_dictionary.js",
             "/_assets/js/tdd_lib.js",
-            "/_assets/js/_lib/bootstrap.bundle.min.js",
+            "/_assets/js/lib/bootstrap.bundle.min.js",
             // "./_assets/js/tdd_options.js",
             // "./_assets/js/tdd_modal.js",
             // "./_assets/js/tdd_init.js",
