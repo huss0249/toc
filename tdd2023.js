@@ -59,7 +59,7 @@ tdd.App = {
 
                 tdd.$preloader.classList.add('preloader-hidden')
 
-                observer.disconnect()
+                // observer.disconnect()
 
                 tdd.App.get_js()
                 // tdd.App.get_data()
