@@ -18,7 +18,8 @@ globalThis.$pageDiv = document.getElementById("pageDIV")
 
 
 globalThis.lang = ''
-globalThis.currentLanguage = ''
+// globalThis.currentLanguage = ''
+globalThis.currentLanguage = 'en'
 
 globalThis.myArr = []
 /*	=====================================================================================	*/
