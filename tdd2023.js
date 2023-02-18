@@ -1,4 +1,4 @@
-import '/assets/js/util.js'
+import './assets/js/util.js'
 
 // import './_assets/js/_test.js'
 
@@ -18,7 +18,7 @@ tdd.App = {
                 info('Data found...')
                 clearInterval(interval)
                 // import('./_assets/js/tdd_toc.js')
-                import('/_assets/js/tdd_toc.js')
+                import('./_assets/js/tdd_toc.js')
             }
         }, 500);
         return
@@ -31,9 +31,9 @@ tdd.App = {
             // "./_assets/js/tdd_dictionary.js",
             // "./_assets/js/tdd_lib.js",
             // "./_assets/js/_lib/bootstrap.bundle.min.js",
-            "/assets/js/dictionary.js",
-            "/assets/js/lib.js",
-            "/assets/js/lib/bootstrap.bundle.min.js",
+            "./assets/js/dictionary.js",
+            "./assets/js/lib.js",
+            "./assets/js/lib/bootstrap.bundle.min.js",
             // "./_assets/js/tdd_options.js",
             // "./_assets/js/tdd_modal.js",
             // "./_assets/js/tdd_init.js",
