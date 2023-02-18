@@ -53,6 +53,7 @@ tdd.App = {
         const observer = new MutationObserver( () => {
             if(Var_lang.getValue()) {
                 // currentLanguage = Var_lang.getValue()
+                currentLanguage = 'en'
                 lang = currentLanguage
                 info('lang => ', lang)
 
