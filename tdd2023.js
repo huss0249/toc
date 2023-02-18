@@ -61,7 +61,8 @@ tdd.App = {
 
                 // observer.disconnect()
 
-                tdd.App.get_js()
+                // tdd.App.get_js()
+                return this.tdd.App.get_js()
                 // tdd.App.get_data()
                 
                 // lang === 'title' ? tdd.covers.buildTitle() : ''
