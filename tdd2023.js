@@ -18,7 +18,7 @@ tdd.App = {
                 info('Data found...')
                 clearInterval(interval)
                 // import('./_assets/js/tdd_toc.js')
-                import('./_assets/js/tdd_toc.js')
+                import('./assets/js/toc.js')
             }
         }, 500);
         return
