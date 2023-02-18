@@ -10,17 +10,17 @@ tdd.App = {
     },
     // get_data: (js_loaded) => {
     get_data() {
-        const interval = setInterval(() => {
-            info('Waiting for data...')
+        // const interval = setInterval(() => {
+        //     info('Waiting for data...')
             // if( !tdd.js_loaded ) {
                 //Do Something While Waiting / Spinner Gif etc.
             // }else{
                 info('Data found...')
-                clearInterval(interval)
+                // clearInterval(interval)
                 // import('./_assets/js/tdd_toc.js')
                 import('./assets/js/toc.js')
             // }
-        }, 500);
+        // }, 500);
         return
     },
     get_js() {
