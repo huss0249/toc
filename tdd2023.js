@@ -50,7 +50,7 @@ tdd.App = {
     },
 	init() {
         //language observer
-        const observer = new MutationObserver( () => {
+        // const observer = new MutationObserver( () => {
             // if(Var_lang.getValue()) {
                 // currentLanguage = Var_lang.getValue()
                 currentLanguage = 'en'
@@ -67,11 +67,11 @@ tdd.App = {
                 // lang === 'title' ? tdd.covers.buildTitle() : ''
                 // lang === 'en' || lang === 'fr' ? modifyDOM(lang) : ''
             // }
-        })
+        // })
 
-        const target = $body
-        const config = { childList: true }
-        observer.observe(target, config)
+        // const target = $body
+        // const config = { childList: true }
+        // observer.observe(target, config)
         // return tdd.App.get_js()
 	},
 }
