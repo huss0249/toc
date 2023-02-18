@@ -518,37 +518,6 @@ function action129573(fn){
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
-function action207758(fn){
-    try{
-     //typeof Var_lang === 'undefined' || Var_lang === null ? currentLanguage = 'cover' : currentLanguage = Var_lang.getValue()
-
-
-
-/*
-
-try {
-
-  Var_lang
-
-  console.log('Var_lang is defined => ', Var_lang.getValue())
-
-currentLanguage = Var_lang.getValue()
-
-} catch(e) {
-
-  console.log('Var_lang is not defined')
-
-
-
-}
-
-*/; 
-     } catch (e) {
-     alert('[get language] ' + e);
-     }
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
 
 function runGroup_og129568() {
 action129570();action131947();action151098();action129572();action168774();action129573();action207758();
