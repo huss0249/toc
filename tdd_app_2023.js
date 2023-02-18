@@ -1,5 +1,6 @@
 // This includes all global vars and js files loader
 // import './_assets/js/_util.js'
+import './_assets/js/util.js'
 
 // import './_assets/js/_test.js'
 
@@ -27,7 +28,7 @@ tdd.App = {
         tdd.js_loaded = false
 
         let arr = [
-            "./_assets/js/util.js",
+            // "./_assets/js/util.js",
             "./_assets/js/tdd_dictionary.js",
             "./_assets/js/tdd_lib.js",
             // "./_assets/js/tdd_options.js",
