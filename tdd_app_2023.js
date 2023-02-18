@@ -1,5 +1,5 @@
 // This includes all global vars and js files loader
-import './_assets/js/_util.js'
+// import './_assets/js/_util.js'
 
 // import './_assets/js/_test.js'
 
