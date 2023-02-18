@@ -36,7 +36,7 @@ tdd.$preloader_cont.appendChild(tdd.$preloader)
 
 let logo = document.createElement('img')
 logo.src = './assets/img/tdd.png'
-logo.alt = './assets/img/tdd.png'
+logo.alt = 'alt'
 logo.width = '200'
 logo.height = '100'
 logo.id = 'logo'
